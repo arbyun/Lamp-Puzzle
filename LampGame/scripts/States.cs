@@ -1,4 +1,4 @@
-﻿namespace LampGame;
+﻿namespace LampGame.scripts;
 
 public enum States
 {
