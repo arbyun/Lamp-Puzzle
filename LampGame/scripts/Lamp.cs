@@ -60,6 +60,9 @@ public class Lamp
         }
     }
     
+    /// <summary>
+    /// Another type of indicator for users that choose Accessibility mode
+    /// </summary>
     internal void WriteSelf()
     {
         switch (State)
