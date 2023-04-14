@@ -21,10 +21,42 @@ public class Lamp
     }
 
     /// <summary>
-    /// supposed to be a visual indicator of the lamp
+    /// A visual indicator to show the Lamp's state to the user
     /// </summary>
-    internal void DrawSelf() 
+    internal void DrawSelf()
     {
-        
+        switch (State)
+        {
+            case States.On:
+                Console.Write("   ___    ");
+                Console.WriteLine();
+                Console.Write("  /   \\   ");
+                Console.WriteLine();
+                Console.Write(" |     |  ");
+                Console.WriteLine();
+                Console.Write(" |\x1b[5m  o\x1b[0m  |  ");
+                Console.WriteLine();
+                Console.Write(" |     |  ");
+                Console.WriteLine();
+                Console.Write("  \\___/   ");
+                Console.WriteLine();
+                break;
+            case States.Off:
+                Console.Write("   ___    ");
+                Console.WriteLine();
+                Console.Write("  /   \\   ");
+                Console.WriteLine();
+                Console.Write(" |     |  ");
+                Console.WriteLine();
+                Console.Write(" |  ");
+                Console.Write("o");
+                Console.Write("  |  ");
+                Console.WriteLine();
+                Console.Write(" |     |  ");
+                Console.WriteLine();
+                Console.Write("  \\___/   ");
+                Console.WriteLine();
+                break;
+        }
     }
 }
