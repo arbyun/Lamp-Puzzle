@@ -59,4 +59,17 @@ public class Lamp
                 break;
         }
     }
+    
+    internal void WriteSelf()
+    {
+        switch (State)
+        {
+            case States.On:
+                Console.Write("ON");
+                break;
+            case States.Off:
+                Console.Write("OFF");
+                break;
+        }
+    }
 }
