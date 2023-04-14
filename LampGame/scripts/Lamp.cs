@@ -1,4 +1,6 @@
-﻿namespace LampGame.scripts;
+﻿using System;
+
+namespace LampGame.scripts;
 
 public class Lamp
 {
@@ -7,15 +9,21 @@ public class Lamp
     /// <summary>
     /// Method to switch the lamp's state
     /// </summary>
-    private void SwitchState()
+    internal void SwitchState()
     {
-        
+        State = State switch
+        {
+            // if state is x => turn it into state y
+            States.Off => States.On,
+            States.On => States.Off,
+            _ => State
+        };
     }
 
     /// <summary>
-    /// A visual indicator to show the Lamp's state to the user
+    /// supposed to be a visual indicator of the lamp
     /// </summary>
-    internal void DrawSelf()
+    internal void DrawSelf() 
     {
         
     }
