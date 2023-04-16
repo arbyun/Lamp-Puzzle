@@ -211,7 +211,27 @@ namespace LampGame
         /// <param name="button">Theoretical button pressed</param>
         private static void PressButton(int button)
         {
-            
+            switch (button)
+            {
+                case 1:
+                    Lamp01.SwitchState();
+                    break;
+                case 2:
+                    // if states are not equal, change them
+                    if (Lamp01.State != Lamp02.State)
+                    {
+                        Lamp01.SwitchState();
+                        Lamp02.SwitchState();
+                    }
+                    break;
+                case 3:
+                    if (Lamp02.State != Lamp03.State)
+                    {
+                        Lamp02.SwitchState();
+                        Lamp03.SwitchState();
+                    }
+                    break;
+            }
         }
     }
 }
