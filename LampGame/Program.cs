@@ -4,6 +4,7 @@ using LampGame.scripts;
 
 namespace LampGame
 {
+    
     internal static class Program
     {
         private static readonly Lamp Lamp01 = new Lamp();
@@ -15,6 +16,11 @@ namespace LampGame
         //not sure we'll need this
         //private static string[] _buttonList;
 
+        /// <summary>
+        /// Main entry point of the puzzle game. Initializes the game state, prompts the user to activate
+        /// accessibility mode, displays a tutorial, and starts the game loop.
+        /// </summary>
+        /// <param name="args">Command-line arguments passed to the program. None are currently available.</param>
         private static void Main(string[] args)
         {
             Lamp01.State = States.Off;
@@ -91,7 +97,7 @@ namespace LampGame
 
             Console.WriteLine("\n\nStarting game...");
             Thread.Sleep(900);
-            
+            Console.Clear();
             Console.WriteLine("\n------------------------------------------\n");
             Console.WriteLine("\nThere are three buttons. Write its number to press the one you want."); /*"\nSince it's " +
                           "your first time here, you get three free tries to test what each one does. After that," +
@@ -100,6 +106,9 @@ namespace LampGame
             GameLoop();
         }
         
+        /// <summary>
+        /// Draws all the lamps in the game.
+        /// </summary>
         private static void DrawAllLamps()
         {
             Lamp01.DrawSelf();
@@ -107,12 +116,18 @@ namespace LampGame
             Lamp03.DrawSelf();
         }
 
+        /// <summary>
+        /// Draws all the buttons available in the game and displays the number of remaining tries.
+        /// </summary>
         private static void DrawAllButtons()
         {
             Console.WriteLine("[ 1 | Switch Lamp 1 ]   [ 2 | Switch Lamp 1 with Lamp 2 ]   [ 3 | Switch Lamp 2 with Lamp 3 ]\n\n");
             Console.WriteLine(_numberOfTries + " out of 6 tries.");
         }
 
+        /// <summary>
+        /// Alternative to DrawAllLamps(), instead writes the state of all lamps to the console.
+        /// </summary>
         private static void WriteAllLamps()
         {
             Console.Write("Lamp 01: ");
@@ -126,6 +141,12 @@ namespace LampGame
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// Main game loop that handles the game logic and user input.
+        /// Displays the lamps and buttons, reads user input, updates the game state, and checks for a win condition.
+        /// If the player wins, displays a message and prompts for a restart or exit.
+        /// If the player loses, displays a Game Over message and prompts for a restart.
+        /// </summary>
         private static void GameLoop()
         {
             bool win = false;
@@ -196,6 +217,9 @@ namespace LampGame
             }
         }
         
+        /// <summary>
+        /// Exits the game by clearing the console and resetting mode.
+        /// </summary>
         private static void QuitGame()
         {
             Console.Clear();
