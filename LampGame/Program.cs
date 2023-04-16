@@ -56,14 +56,32 @@ namespace LampGame
             Thread.Sleep(500);
             Console.Clear();
 
-            Console.WriteLine("A lamp that is turned on looks like this:\n");
-            Lamp01.State = States.On;
-            Lamp01.DrawSelf();
-            Thread.Sleep(200);
-            Lamp01.State = States.Off;
-            
-            Console.WriteLine("\nWhile a lamp that is turned off looks like this:\n");
-            Lamp01.DrawSelf();
+            if (_accessibility != true)
+            {
+                Console.WriteLine("A lamp that is turned on looks like this:\n");
+                Lamp01.State = States.On;
+                Lamp01.DrawSelf();
+                Thread.Sleep(200);
+                Lamp01.State = States.Off;
+                
+                Console.WriteLine("\nWhile a lamp that is turned off looks like this:\n");
+                Lamp01.DrawSelf();
+            }
+            else
+            {
+                Console.WriteLine("A lamp that is turned on looks like this:\n");
+                Lamp01.State = States.On;
+                Console.Write("Lamp: ");
+                Lamp01.WriteSelf();
+                Console.WriteLine();
+                Thread.Sleep(200);
+                Lamp01.State = States.Off;
+                
+                Console.WriteLine("\nWhile a lamp that is turned off looks like this:\n");
+                Console.Write("Lamp: ");
+                Lamp01.WriteSelf();
+                Console.WriteLine();
+            }
             
             
             Console.WriteLine("\nPress any key to start the game.\n");
