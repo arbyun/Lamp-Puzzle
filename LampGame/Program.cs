@@ -17,6 +17,23 @@ namespace LampGame
         {
             Console.WriteLine("Welcome to the Lamp Puzzle.\nPress any key to start the game.\n");
             string key = Console.ReadLine();
+            
+            Console.WriteLine("Do you want to activate accessibility mode?");
+            Console.WriteLine("'Accessibility' mode changes blinking visual indicators to words. It's the option to go " +
+                              "if your console doesn't display ASCII/escape characters for some reason or if you prefer a " +
+                              "cleaner look.\n\n");
+            Console.WriteLine("Answer with [Y/N]");
+            string mode = Console.ReadLine();
+
+            switch(mode)
+            {
+                case "Y": 
+                    Console.WriteLine("Accessibility mode now activated!");
+                    break;
+                case "y":
+                    Console.WriteLine("Accessibility mode now activated!");
+                    break;
+            }
 
             Console.WriteLine("\n\nStarting game...");
             Thread.Sleep(900);
