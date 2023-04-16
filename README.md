@@ -23,7 +23,7 @@ Here's a quick rundown of the output of each of the buttons available.
 Here's a flowchart that connects the methods and files used, for a better structured/architectural understanding of the project.
 
 
-![Fluxogram_LampGame](https://user-images.githubusercontent.com/115217686/232330018-66b61d32-2611-4bdc-935a-55871120adaf.png)
+![Fluxogram_LampGame](./fluxograma.png)
 
 ## Metadata
 
@@ -35,4 +35,4 @@ Here's a flowchart that connects the methods and files used, for a better struct
 
 ## License
 
-Released under the [MIT License](./LICENSE).
+Released under the [MIT License](./LICENSE.md).
