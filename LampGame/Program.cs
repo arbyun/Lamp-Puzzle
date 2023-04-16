@@ -52,6 +52,20 @@ namespace LampGame
                 _accessibility = true;
             }
             
+            Console.WriteLine("Starting tutorial...\n\n");
+            Thread.Sleep(500);
+            Console.Clear();
+
+            Console.WriteLine("A lamp that is turned on looks like this:\n");
+            Lamp01.State = States.On;
+            Lamp01.DrawSelf();
+            Thread.Sleep(200);
+            Lamp01.State = States.Off;
+            
+            Console.WriteLine("\nWhile a lamp that is turned off looks like this:\n");
+            Lamp01.DrawSelf();
+            
+            
             Console.WriteLine("\nPress any key to start the game.\n");
             //we can just use readkey
             //string key = Console.ReadLine();
