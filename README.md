@@ -15,8 +15,8 @@ Here's a quick rundown of the output of each of the buttons available.
 | Button | Description |
 | --- | --- |
 | `1` | switches the state of the first lamp between ON/OFF |
-| `2` | if buttons one or two have different states, switches the states between them |
-| `3` | if buttons two or three have different states, switches the states between them |
+| `2` | if buttons `1` or `2` have different states, switches the states between them |
+| `3` | if buttons `2` or `3` have different states, switches the states between them |
 
 ### Flowchart
 
@@ -28,11 +28,11 @@ Here's a flowchart that connects the methods and files used, for a better struct
 ## Metadata
 
 * @arbyun a.k.a. Daniela Dantas, a22202104
--- Lamp class, diverse Draw and Write functions, GameLoop, overall code cleanup
+-- Lamp class, diverse Draw and Write functions, GameLoop(), overall code cleanup
 
 * @Francisco-Anjos a.k.a. Francisco Anjos, a22204855
 -- User instructions, tutorial, lamp switching, flowchart, overview
 
 ## License
 
-Released under the MIT License.
+Released under the [MIT License](./LICENSE).
