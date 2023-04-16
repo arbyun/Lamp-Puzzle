@@ -91,7 +91,7 @@ namespace LampGame
 
         private static void DrawAllButtons()
         {
-            Console.WriteLine("[ 1 ]   [ 2 ]   [ 3 ]\n\n");
+            Console.WriteLine("[ 1 | Switch Lamp 1 ]   [ 2 | Switch Lamp 1 with Lamp 2 ]   [ 3 | Switch Lamp 2 with Lamp 3 ]\n\n");
             Console.WriteLine(_numberOfTries + " out of 6 tries.");
         }
 
