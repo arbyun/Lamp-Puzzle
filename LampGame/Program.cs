@@ -13,8 +13,6 @@ namespace LampGame
         private static int _numberOfTries;
         private static bool _gameOver;
         private static bool _accessibility;
-        //not sure we'll need this
-        //private static string[] _buttonList;
 
         /// <summary>
         /// Main entry point of the puzzle game. Initializes the game state, prompts the user to activate
@@ -39,18 +37,6 @@ namespace LampGame
                               "cleaner look.\n\n");
             Console.WriteLine("Answer with [Y/N]");
             string mode = Console.ReadLine();
-
-            /*switch(mode)
-            {
-                case "Y": 
-                    Console.WriteLine("Accessibility mode now activated!");
-                    break;
-                case "y":
-                    Console.WriteLine("Accessibility mode now activated!");
-                    break;
-            }*/
-            
-            //a simple if would suffice...
 
             if (mode == "Y" | mode == "y")
             {
@@ -91,17 +77,13 @@ namespace LampGame
             
             
             Console.WriteLine("\nPress any key to start the game.\n");
-            //we can just use readkey
-            //string key = Console.ReadLine();
             Console.ReadKey();
 
             Console.WriteLine("\n\nStarting game...");
             Thread.Sleep(900);
             Console.Clear();
             Console.WriteLine("\n------------------------------------------\n");
-            Console.WriteLine("\nThere are three buttons. Write its number to press the one you want."); /*"\nSince it's " +
-                          "your first time here, you get three free tries to test what each one does. After that," +
-                          "you will start spending your tries. When they get to 0, you will lose.");*/
+            Console.WriteLine("\nThere are three buttons. Write its number to press the one you want.");
 
             GameLoop();
         }
