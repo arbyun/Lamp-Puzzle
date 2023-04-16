@@ -169,7 +169,8 @@ namespace LampGame
                     if (Lamp01.State is States.On && Lamp02.State is States.On && Lamp03.State is States.On)
                     {
                         Console.Clear();
-                        Console.WriteLine("YOU WIN!\n\nPress any key to restart or ESC to quit.");
+                        Console.WriteLine($"YOU WIN!\nYou used {_numberOfTries} out of 6 tries.\n\nPress any " +
+                                          $"key to restart or ESC to quit.");
                         if (Console.ReadKey(true).Key != ConsoleKey.Escape)
                         {
                             Console.Clear();
