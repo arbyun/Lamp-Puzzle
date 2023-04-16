@@ -173,6 +173,7 @@ namespace LampGame
                         if (Console.ReadKey(true).Key != ConsoleKey.Escape)
                         {
                             Console.Clear();
+                            _numberOfTries = 0;
                             Main(new []{""});
                         }
 
