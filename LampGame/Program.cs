@@ -38,7 +38,7 @@ namespace LampGame
             Console.WriteLine("Answer with [Y/N]");
             string mode = Console.ReadLine();
 
-            if (mode == "Y" | mode == "y")
+            if (mode == "Y" || mode == "y")
             {
                 Console.WriteLine("Accessibility mode now activated!");
                 _accessibility = true;
