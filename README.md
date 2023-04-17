@@ -3,6 +3,8 @@
 A small and short console puzzle game about turning light bulbs on.
 
 ![GitHub](https://img.shields.io/github/license/arbyun/Lamp-Puzzle)
+ [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=arbyun_Lamp-Puzzle&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=arbyun_Lamp-Puzzle)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=arbyun_Lamp-Puzzle&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=arbyun_Lamp-Puzzle)
 
 ## Overview
 
