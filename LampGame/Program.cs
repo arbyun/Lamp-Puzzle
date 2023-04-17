@@ -48,7 +48,7 @@ namespace LampGame
             Thread.Sleep(500);
             Console.Clear();
 
-            if (_accessibility != true)
+            if (!_accessibility)
             {
                 Console.WriteLine("A lamp that is turned on looks like this:\n");
                 Lamp01.State = States.On;
