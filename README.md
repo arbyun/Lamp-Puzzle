@@ -2,6 +2,8 @@
 
 A small and short console puzzle game about turning light bulbs on.
 
+![GitHub](https://img.shields.io/github/license/arbyun/Lamp-Puzzle)
+
 ## Overview
 
 This project involves three lamps and three buttons that can toggle the state of these lamps. The player will have six attempts to link them by clicking on one of three different buttons, each with a different outcome. The main game loop runs until the game is won or the player runs out of tries, at which point the game is over. 
