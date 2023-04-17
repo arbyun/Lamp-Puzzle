@@ -43,7 +43,6 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-          dotnet-sonarscanner begin /k:"arbyun_Lamp-Puzzle" /o:"arbyun2002" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          dotnet restore ./src/Lamp_Puzzle.sln
-          dotnet build ./src/Lamp_Puzzle.sln --configuration Release
-          dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"arbyun_Lamp-Puzzle" /o:"arbyun2002" /d:sonar.login="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
+          dotnet build Lamp-Game.sln
+          .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
