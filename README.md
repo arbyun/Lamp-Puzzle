@@ -3,8 +3,6 @@
 A small and short console puzzle game about turning light bulbs on.
 
 ![GitHub](https://img.shields.io/github/license/arbyun/Lamp-Puzzle)
- [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=arbyun_Lamp-Puzzle&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=arbyun_Lamp-Puzzle)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=arbyun_Lamp-Puzzle&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=arbyun_Lamp-Puzzle)
 
 ## Overview
 
@@ -26,13 +24,12 @@ Here's a quick rundown of the output of each of the buttons available.
 
 Here's a flowchart that connects the methods and files used, for a better structured/architectural understanding of the project.
 
-
 ![Fluxogram_LampGame](./fluxograma.png)
 
 ## Metadata
 
 * @arbyun a.k.a. Daniela Dantas, a22202104
--- Lamp class, diverse Draw and Write functions, GameLoop(), overall code cleanup
+-- Lamp class, diverse Draw and Write functions, Game Loop, overall code cleanup
 
 * @Francisco-Anjos a.k.a. Francisco Anjos, a22204855
 -- User instructions, tutorial, lamp switching, flowchart, overview
